@@ -22,6 +22,12 @@ var server = http.createServer(function(request, response){
         var fileStream = fs.createReadStream(cssPath, 'UTF-8');
         response.writeHead(200, {'Content-Type': 'text/css'});
         fileStream.pipe(response);
+    } 
+    else if(request.url.match(/.js$/) ){
+        var jsPath = path.join(__dirname, 'public', requet.url);
+        var fileStream = fs.createReadStream(jsPath, 'UTF-8');
+        response.writeHead(200, {'Content-Type' : 'script/javascript'});
+        fileStream.pipe(response);
     };
 });
 server.listen(3000);

@@ -4,7 +4,7 @@
   "description": "Learning how to link node.js & html",
   "main": "index.js",
   "scripts": {
-    "dev:server" : "nodemon index.js"
+    "dev:server" : "nodemon -L index.js"
   },
   "repository": {
     "type": "git",
