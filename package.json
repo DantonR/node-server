@@ -1,0 +1,22 @@
+{
+  "name": "node-server",
+  "version": "0.0.1",
+  "description": "Learning how to link node.js & html",
+  "main": "index.js",
+  "scripts": {
+    "dev:server" : "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DantonR/node-server.git"
+  },
+  "keywords": [
+    "Node"
+  ],
+  "author": "Danton Ruthe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DantonR/node-server/issues"
+  },
+  "homepage": "https://github.com/DantonR/node-server#readme"
+}
